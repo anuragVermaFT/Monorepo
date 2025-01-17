@@ -1,0 +1,22 @@
+{
+  "name": "monorepo",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "lint": "turbo run lint"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "npm@10.8.3",
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "dependencies": {
+    "eslint-plugin-turbo": "^2.3.3"
+  }
+}
