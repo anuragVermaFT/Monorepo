@@ -33,9 +33,9 @@ const SideNavBar = () => {
   return (
     <motion.div
       className="h-screen bg-white p-2 border border-slate-300 sticky top-0"
-      animate={{ width: isShow ? "225px" : "fit-content" }}
+      animate={{ width: isShow ? "16rem" : "4rem" }}
       initial={false}
-      transition={{ type: "inertia", stiffness: 100 }}
+      transition={{ type: "spring", stiffness: 100, damping: 10 }}
     >
       <div className="mb-3 border-b border-slate-300 p-2">
         <div
@@ -43,8 +43,8 @@ const SideNavBar = () => {
           onClick={() => setIsShow(!isShow)}
         >
           <div className="flex items-center gap-2">
-            <div className="p-1 rounded-md bg-indigo-600 text-white -ml-1">
-              <CircleUserRound size={24} />
+            <div className="rounded-md  text-white -ml-1 w-8 h-8">
+              <img src="./public/boy.png" alt="Avatar" />
             </div>
             {isShow && (
               <motion.div
