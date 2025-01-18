@@ -6,7 +6,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@repo/ui": ["../../packages/ui/dist"]
+      "@repo/ui": ["../../packages/ui/dist"],
+      "react": ["./node_modules/@types/react"]
     }
   },
   "include": ["src/**/*"],

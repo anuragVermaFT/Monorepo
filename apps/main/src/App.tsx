@@ -1,14 +1,11 @@
-import Hello from "@repo/ui/Hello";
+import SideNavBar from "./components/Sidebar/SideNavBar";
 
-function App() {
-  console.log("hello");
-
+const App = () => {
   return (
-    <div>
-      <h1>Hello</h1>
-      <Hello />
+    <div className="bg-gray-300">
+      <SideNavBar />
     </div>
   );
-}
+};
 
 export default App;
